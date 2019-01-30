@@ -1,0 +1,230 @@
+
+<meta http-equiv="Context-Type" content="text/html; charset=US-ASCII">
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<!-- <script type="text/javascript" src="script.js"></script>-->
+
+	
+
+	</head>
+
+	<body>
+
+	<form action="" method="post"style="padding-left:20px">
+
+	<div class="forms">
+
+		<label>First Name:</label>
+
+		<input id="firstname" type="text" name="firstname" value="">
+
+	</div>
+
+	<div class="forms">
+
+		<label>Last Name:</label>
+
+		<input id="lastname" type="text" name="lastname" value="">
+
+	</div>
+
+	<div class="forms">
+
+		<label>Email:</label>
+
+		<input id="email" type="email" id="email"></input>
+
+	</div>
+
+	<div class="forms">
+
+		<label>Contact Number:</label>
+
+		<input id="number" type="text" maxlength="10" id="contact_number"></input>
+
+	</div>
+
+	<div class="forms">
+
+		<label>Address:</label>
+
+		<textarea id="address" rows="3" cols="20"></textarea>
+
+	</div>
+
+	<div class="forms">
+
+		<label>User Name:</label>
+
+		<input id="username" type="text" id="user_name"></input>
+
+	</div>
+
+	<div class="forms">
+
+		<label>Password:</label>
+
+		<input id="pwd" type="Password" id="password"></input>
+
+	</div>
+
+	<div class="forms">
+
+		<label>Gender:</label>
+
+		<input id="male" type="radio" name="gender" value="male" checked> Male
+
+		<input id="female" type="radio" name="gender" value="female"> Female
+
+	</div>
+
+	<div class="forms">
+
+		<label>Qualification:</label> 
+
+		<select id="QualificationList">
+
+		<option id="option2">--Select--</option>
+            
+            <script>
+                
+                var Qualification = ["10th", "12th", "Diploma", "B.Tech", "M.Tech"];
+                
+                var sel = document.getElementById('QualificationList');
+                
+                for (var i=0;i<Qualification.length;i++)
+                    
+                {
+                    
+                    var opt = document.createElement('option');
+                    
+                    opt.innerHTML=Qualification[i];
+                    
+                    opt.value=Qualification[i];
+                    
+                    sel.appendChild(opt);
+
+                }
+            
+            </script>
+
+		</select>
+
+	</div>
+
+	<div class="forms">
+
+		<label>Experience:</label>
+
+		<select id="ExperienceList">
+
+			<option id="options">--Select--</option>
+            
+            <script>
+                var Experience = ["0-2years", "3-5years", "6-10years"];
+
+                var se=document.getElementById("ExperienceList");
+
+                for (var i=0; i<Experience.length;i++)
+
+                {
+
+                    var options=document.createElement("option");
+
+                    options.innerHTML=Experience[i];
+
+                    options.value=Experience[i];
+
+                    se.appendChild(options);
+
+                }
+                
+            </script>
+
+		</select>
+
+	</div>
+
+	<div class="forms">
+
+		<label>Coding Languages:</label>
+        
+        		<label id="lang1"></label><input type="checkbox" id="language1" class="checkbox",class="checkbox"/>
+                <label id="lang2"></label><input type="checkbox" id="language2" class="checkbox",class="checkbox" />
+                <label id="lang3"></label><input type="checkbox" id="language3" class="checkbox",class="checkbox" />
+                <label id="lang4"></label><input type="checkbox"id="language4" class="checkbox",class="checkbox"/>
+                <label id="lang5"></label><input type="checkbox"id="language5" class="checkbox",class="checkbox"/>
+        <script>
+           /* 
+            for (var option in optionArray) {
+    if (optionArray.hasOwnProperty(option)) {
+        var pair = optionArray[option];
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.name = pair;
+        checkbox.value = pair;
+        s2.appendChild(checkbox);
+
+        var label = document.createElement('label')
+        label.htmlFor = pair;
+        label.appendChild(document.createTextNode(pair));
+
+        s2.appendChild(label);
+        s2.appendChild(document.createElement("br"));    
+    }
+}*/
+            
+            
+            
+            
+           
+			var language =[{LanguageName:"C/C++",IsEnabled:false},{LanguageName:"Java",IsEnabled:false},{LanguageName:"C#",IsEnabled:false},{LanguageName:"PHP",IsEnabled:false},{LanguageName:"Python",IsEnabled:false}];
+            
+			document.getElementById("lang1").innerHTML=language[0].LanguageName;
+			document.getElementById("language1").checked=language[0].IsEnabled;
+			
+			document.getElementById("lang2").innerHTML=language[1].LanguageName;
+			document.getElementById("language2").checked=language[1].IsEnabled;
+			
+			document.getElementById("lang3").innerHTML=language[2].LanguageName;
+			document.getElementById("language3").checked=language[2].IsEnabled;
+			
+			document.getElementById("lang4").innerHTML=language[3].LanguageName;
+			document.getElementById("language4").checked=language[3].IsEnabled;
+			
+			document.getElementById("lang5").innerHTML=language[4].LanguageName;
+			document.getElementById("language5").checked=language[4].IsEnabled;
+			
+        
+        
+        
+        
+
+		/*<div><input type = "checkbox" name = "C/C++" value = "on"> C/C++</div>
+
+		<div><input type = "checkbox" name = "Java" value = "on"> Java</div>
+
+		<div><input type = "checkbox" name = "C#" value = "on"> C#</div>
+
+		<div><input type = "checkbox" name = "PHP" value = "on"> PHP</div>
+
+		<div><input type = "checkbox" name = "Python" value = "on"> Python</div>
+
+		<div><input type="submit" value="Submit"></div>*/
+		</script>
+		
+		<div><input type="button" onclick="submit()" value="Submit"></input></div>
+
+		</form> 
+
+	</div>
+
+	</body>
+
+</html><html><head></head><body></body></html>
